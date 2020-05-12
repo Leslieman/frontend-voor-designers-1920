@@ -1,6 +1,41 @@
-/*
-  Wat doe je ook alweer in Javascript voor een micro-interactie?
-  1. Gebruik de querySelector om een element in je html te selecteren
-  2. Koppel een evenListener aan het element om een mouse-event te detecteren
-  3. Gebruik het Classlist object om een css class aan een element toe te voegen of weg te halen.
-*/
+var btnOne = document.getElementById('btnOne');
+var btnTwo = document.getElementById('btnTwo');
+var wList = document.getElementById('watchtlist');
+
+
+
+function changeText(event){    
+    btnOne.style.display='none';
+    btnTwo.style.display='block';
+    wList.innerText='watchlist(1)';
+}
+
+
+
+btnOne.addEventListener('click', changeText);
+
+
+
+console.log('hello world');
+
+
+
+
+
+
+//var btn = document.querySelector("button");
+//var watchlist = document.querySelector(".watchlist");
+//
+//
+//function addToWatch(Event) {
+//    var btnText = document.querySelector(".buttonText");
+//    btnText.innerHTML("Movie has been added!");
+//
+//}
+//
+//
+//btn.addEventListener('Click', addToWatch);
+//
+//
+//
+//console.log('hello world');
