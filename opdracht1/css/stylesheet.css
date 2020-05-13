@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    animation: fade 1s ease-in 0s;
     /*    border: 1px solid black;*/
 }
 
@@ -228,10 +229,24 @@ nav ul li {
 }
 
 
+.fade{
+    animation: fade 2s ease 0s;
+}
 
 
-
-
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+    
+    
+    
+    
+}
 
 
 

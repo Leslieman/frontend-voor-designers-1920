@@ -1,16 +1,22 @@
 var btnOne = document.querySelector('#btnOne');
-var btnTwo = document.querySelector('#btnTwo');
-var wList = document.querySelector('#watchtlist');
-
-
-
+//var btnTwo = document.querySelector('#btnTwo');
+var wList = document.querySelector('#watchlist');
 
 
 function changeText(event){    
-    btnOne.style.display='none';
-    btnTwo.style.display='block';
+    btnOne.addEventListener('click', changeBack);
+    btnOne.textContent='Added';
+    btnOne.classList.add('fade');
+    btnOne.style.background = "#56B13B";
+    wList.textContent='watchlist(1)';
+    wList.classList.add('fade');
 }
 
+function changeBack(event){
+    btnOne.textContent='add to watchlist';
+    btnOne.style.background = '#3a75c9';
+    wList.textContent='watchlist';
+}
 
 
 btnOne.addEventListener('click', changeText);
