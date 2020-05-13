@@ -1,13 +1,14 @@
-var btnOne = document.getElementById('btnOne');
-var btnTwo = document.getElementById('btnTwo');
-var wList = document.getElementById('watchtlist');
+var btnOne = document.querySelector('#btnOne');
+var btnTwo = document.querySelector('#btnTwo');
+var wList = document.querySelector('#watchtlist');
+
+
 
 
 
 function changeText(event){    
     btnOne.style.display='none';
     btnTwo.style.display='block';
-    wList.innerText='watchlist(1)';
 }
 
 
@@ -16,7 +17,6 @@ btnOne.addEventListener('click', changeText);
 
 
 
-console.log('hello world');
 
 
 

@@ -39,7 +39,7 @@ nav ul li:nth-child(2) img {
 
 
 
-#watchList{
+#watchlist{
     color: #3a75c9;
     font-size: 1em;
     font-weight: 900;
@@ -47,7 +47,7 @@ nav ul li:nth-child(2) img {
     text-transform: uppercase;
 }
 
-#watchList:hover {
+#watchlist:hover {
     color: #3e80ce;
     transition: all 0.5s ease;
     opacity: 50%;
@@ -61,7 +61,6 @@ nav ul li {
     list-style: none;
 }
 
-nav ul li:nth-child(2) {}
 
 #btnOne {
     margin: 0vw 0vw 0vw 0vw;
@@ -180,6 +179,9 @@ nav ul li:nth-child(2) {}
     margin: 2vw 0vw 0vw 1.5vw;
 }
 
+.content ul li:first-child img{
+    margin-top: 15px;
+}
 
 .photos {
     margin: 1.5vw 0vw 0vw 0vw;
