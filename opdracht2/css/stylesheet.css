@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    font-weight: 100;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.carousel-container{
+    width: 35%;
+    margin: 15vh auto;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.3);
+  
+}
+
+.carousel-slide{
+    display: flex;
+    width: 100%;
+   
+}
+
+button img{
+    width: 45%;
+}
+
+button{
+    position: absolute;
+    background-color: #333333;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 500vw;
+    border: none;
+    top: 45%;
+    -webkit-box-shadow: 0px 10px 41px -1px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 10px 41px -1px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 10px 41px -1px rgba(0, 0, 0, 0.21);
+}
+
+#nextBtn{
+    right: 10vw;
+}
+
+#prevBtn{
+    left: 10vw;
+}
+
+button:hover{
+    transform: scale(1.2);
+    transition: 0.25s ease
+}
+
+button:active{
+    transform: scale(0.8);
+    transition: 0.10 ease;
+    background-color: #8e8e8e;
+}
+
+p{
+    width: 30em;
+    margin: -10vh auto;
+    text-align: center;
+
+}
