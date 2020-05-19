@@ -1,7 +1,10 @@
 ## Description
 
-Ik heb voor opdracht 1 van Frontend for Designers een detailpagina gemaakt voor een film, waar gebruikers de film kunnen toevoegen aan een watchlist om die later te kunnen bekijken
+Ik heb voor deze opdracht een carousel gemaakt met vakantie fotos. De gebruiker kan door de foto's navigeren d.m.v een linker of rechter arrow keypress, of door button kliks. Ik heb het ontwerp zo simpel mogelijk gehouden.
+
 
 ## Link
 
-Link https://github.com/Leslieman/frontend-voor-designers-1920/tree/master/opdracht2
+
+Preview: https://leslieman.github.io/frontend-voor-designers-1920/opdracht2/index.html
+Code: https://github.com/Leslieman/frontend-voor-designers-1920/tree/master/opdracht2

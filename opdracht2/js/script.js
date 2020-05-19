@@ -13,7 +13,7 @@ carouselSlide.style.transform = 'translateX('+(-size*counter)+'px)';
 
 // button listeners
 nextBtn.addEventListener('click', ()=>{
-    if(counter >= carouselImages.length -1) return;
+    if(counter >= carouselImages.length -1) return; 
     carouselSlide.style.transition = "transform 0.4s ease";
     counter++;
      //verplaatst de slide naar de afmetingen van het beeld. bijvoorbeeld (-800*2)px
@@ -27,15 +27,14 @@ prevBtn.addEventListener('click', ()=>{
     carouselSlide.style.transform = 'translateX('+(-size*counter)+'px)';
 });
 
-//keypress listeners
-window.addEventListener('keyup', (e)=>{
-switch(e.key){
-    case 'ArrowLeft':
+//keypress listeners 
+window.addEventListener('keyup', (e)=>{ //luistert in de browser venster naar het "keyup" event, dus wanneer een gebruiker een toets loslaat
+switch(e.key){ 
+    case 'ArrowLeft': //event.code = ArrowLeft
         if(counter <= 0) return;
         carouselSlide.style.transition = "transform 0.4s ease";
         counter--;
         carouselSlide.style.transform = 'translateX('+(-size*counter)+'px)';
-        break;
      case 'ArrowRight':
         if(counter >= carouselImages.length -1) return;
         carouselSlide.style.transition = "transform 0.4s ease";
@@ -44,7 +43,6 @@ switch(e.key){
 }
 
 });
-
 
 // carousel loop - je herlaadt de beelden niet maar springt ongezien terug naar foto waar je begon.
 
