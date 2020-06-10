@@ -1,30 +1,29 @@
-const header = document.querySelector('h1');
-const par = document.querySelector('p');
-const btn = document.querySelector('button');
+var pageCounter = 1;
+var header = document.querySelector('h1');
+var btn = document.querySelector('#btn');
+var info = document.querySelector('.animal-info');
+var request = new XMLHttpRequest();
 
-var ourRequest = new XMLHttpRequest();
-var RequestSource = 'https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json';
+btn.addEventListener("click", function(){
+    request.open('GET', 'https://learnwebcode.github.io/json-example/animals-'+ pageCounter +'.json');
+    request.responseType = 'json';
 
-
-
-
-
-btn.addEventListener('click', function(){
-ourRequest.open('GET', RequestSource);
-ourRequest.onload = function(){ //testen of de json is ingeladen
-    const ourData = JSON.parse(ourRequest.responseText); // parsed de json naar javascript
- 
-
-
-    for (let i = 0; i < ourData.length; i++){
-    console.log(ourData[i].title);
-    par.textContent = ourData[i].title + ourData[i].plot;
-}
+request.onload = function(){
+const data = request.response;  
+renderHTML(data);
 };
-ourRequest.send();
-});
+request.send();
+pageCounter++;
+if (pageCounter > 3){
+    pageCounter = 1;
+}
+}); 
 
+function renderHTML(data){
+    var htmlString ="";
+    for (i = 0; i < data.length; i++){
+        htmlString += "<p>" + data[i].name + " is a " + data[i].species + " and likes: " + data[i].foods.likes + "</p>";
+    }
 
-
-
-
+    info.insertAdjacentHTML('beforeend', htmlString);
+};

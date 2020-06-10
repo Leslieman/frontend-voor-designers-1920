@@ -1,46 +1,58 @@
 *{
-  font-family: sans-serif;
-  font-size: 1.2em;
-  font-weight: 200;
-}
-button{
-  border-radius: 500px;
-  padding: 30px;
-  border: none;
-  color: #1f1f1f;
-  margin: 12vw auto;
-  position: absolute;
-  background-color: white;
-  -webkit-box-shadow: 0px 5px 33px 3px rgba(0,0,0,0.14);
--moz-box-shadow: 0px 5px 33px 3px rgba(0,0,0,0.14);
-box-shadow: 0px 5px 33px 3px rgba(0,0,0,0.14);
+    font-family: sans-serif;
+    /* border: 1px solid black; */
 }
 
-button:hover{
-  opacity: 50%;
-  transform: scale(1.1);
-  transition: 0.3s ease-in-out;
-}
-
-button:active{
- opacity: 10%; 
- transform: scale(0.9);
- transition: 0.1s ease-in-out;
-}
 
 .container{
-width: 15vw;
+width: 35vw;
 margin: auto;
+
 }
+
+
+#btn{
+    width: 100%;
+    margin-top: 250px;
+    border-radius: 80px;
+    border: none;
+    background-color: #6575FF;
+    color: white;
+    font-weight: 600;
+    padding: 1em 2em;
+    font-size: 1.8em;
+    -webkit-box-shadow: 0px 5px 33px 3px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0px 5px 33px 3px rgba(0,0,0,0.14);
+    box-shadow: 0px 5px 33px 3px rgba(0,0,0,0.14);
+
+}
+#btn:hover{
+    opacity: 75%;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+#btn:active{
+    opacity: 10%; 
+    transform: scale(0.9);
+    transition: 0.1s ease-in-out;
+}
+
+
+.animal-info{
+    margin-top: 50px;
+}
+
 p{
-  margin-top: 500px;
-  margin: auto;
-  font-size: 1em;
-  text-align: center;
-}
+    font-size: 1.5em;
+    width: 35vw;
+    color: #383838;
+    background-color: #F6F5FB;
+    padding: 30px 70px 30px 35px;
+    margin: 20px auto;
+    text-align: left;
+    font-weight: 300;
+    border-radius: 5px;
 
-.containerMain{
-  width: 50vw;
-  margin: auto;
-
+    
 }
