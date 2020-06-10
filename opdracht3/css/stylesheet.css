@@ -11,9 +11,23 @@ margin: auto;
 }
 
 
+h1{
+    text-align: center;
+    margin: 200px auto;
+    width: 50vw;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #6575FF;
+    font-style: oblique;
+    font-size: 0.8em;
+}
+
 #btn{
     width: 100%;
-    margin-top: 250px;
+    margin-top: -100px;
     border-radius: 80px;
     border: none;
     background-color: #6575FF;
@@ -49,10 +63,15 @@ p{
     color: #383838;
     background-color: #F6F5FB;
     padding: 30px 70px 30px 35px;
-    margin: 20px auto;
+    margin: 30px auto;
     text-align: left;
     font-weight: 300;
     border-radius: 5px;
 
     
+}
+
+p:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
