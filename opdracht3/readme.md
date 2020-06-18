@@ -18,9 +18,9 @@ Ik heb geprobeerd de interface zo simpel mogelijk te houden.
 
 UI events: Je kunt deze applicatie bedienen met een Onclick (button) en keypress (spacebar) event.
 
-Loading state: n.v.t
-Ideal state: Deze staat is behaalt wanneer alle dieren zijn getoond
-Empty state: Deze staat is wanneer er geen dieren zijn getoond.
+Loading state: n.v.t <br>
+Ideal state: Deze staat is behaalt wanneer alle dieren zijn getoond <br>
+Empty state: Deze staat is wanneer er geen dieren zijn getoond.<br>
 
 
 
@@ -32,5 +32,5 @@ De applicatie gaat door json objecten heen d.m.v een counter, in plaats van een 
 ## Link
 
 
-Demo: https://leslieman.github.io/frontend-voor-designers-1920/opdracht3/
+Demo: https://leslieman.github.io/frontend-voor-designers-1920/opdracht3/ <br>
 Source code: https://github.com/Leslieman/frontend-voor-designers-1920/tree/master/opdracht3
